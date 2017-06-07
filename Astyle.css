@@ -1,0 +1,15 @@
+.style2{
+	background:orange;
+	color:blue;
+	font-size:45;
+	padding:5px 10px 15px 20px
+	}
+span{
+	padding:5px 10px;
+	background:pink;
+	border:3px solid red
+	}
+.test p{				/*will only affect <p> where class is test*/
+	display:none			/*hides display
+	}
+	

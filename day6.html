@@ -1,0 +1,38 @@
+<html>
+<head><title>AngularJS</title>
+<style>
+    .red{
+        color:red;
+    }
+    .blue{
+        color: blue;
+    }
+</style>
+<script src="angular.js"></script>
+</head>
+<body>
+    <h1>Input through JS</h1>
+<input type="text" id="input1">
+<button onclick="changeText()">Change</button>
+<p id="para1">Hello</p>
+<script>
+    function changeText(){
+
+        var input=document.getElementById("input1");
+        console.log(input);
+        var para=document.getElementById("para1");
+        para.innerText=input.value;
+    }
+    </script>
+    <br>
+    <h1>Input through Angular</h1>
+    <div ng-app>
+        <h3>Text</h3><input type="text" ng-model="text">
+        <h3>Image(Type "android.jpg and see magic)</h3><input type="text" ng-model="img">
+        <h3>Colour(Blue or Red)</h3><input type="text" ng-model="color"
+        <h1><p class="{{color}}">Hello {{text}}</p></h1>
+        <img src="{{img}}">
+    </div>  
+      
+</body>
+</html>
